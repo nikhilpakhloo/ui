@@ -19,7 +19,7 @@ export default function CardSection() {
           <RiArrowRightDoubleFill />
         </div>
       </div>
-      <div className="xl:flex justify-center w-full md:space-x-14 xl:mt-12 mt-8 ">
+      <div className="xl:flex justify-center w-full md:space-x-14 xl:mt-14 mt-8 ">
         <div className="w-auto flex flex-col space-y-8 ">
           <div>
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-5 lg:gap-y-24 md:gap-y-14 gap-y-5">
