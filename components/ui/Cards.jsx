@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Cards({item}) {
   return (
-    <div className='flex flex-col w-[280px] space-y-4'>
+    <div className='flex flex-col lg:w-[280px] space-y-4 px-2'>
 
 
         <Image src={item.img}  className='object-cover w-full h-40 ' width={100} height={100}/>

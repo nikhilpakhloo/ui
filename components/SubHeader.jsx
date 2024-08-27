@@ -19,10 +19,10 @@ export default function SubHeader() {
           >
             Home
           </Link>
-          <Link href={`/`} className="text-[#1b1b1b] text-md  font-medium">
+          <Link href={`/`} className="text-[#1b1b1b] text-md  font-medium ">
             Company
           </Link>
-          <Link href={`/`} className="text-[#1b1b1b] text-md  font-medium">
+          <Link href={`/`} className="text-[#1b1b1b] text-md  font-medium sm:block hidden ">
             Team
           </Link>
           <Link
@@ -56,15 +56,15 @@ export default function SubHeader() {
             Forum
           </Link>
         </div>
-        <HiDotsHorizontal className="lg:hidden ml-1" />
+        <HiDotsHorizontal className="lg:hidden ml-1 " />
       </div>
-      <div className="pl-14">
+      <div className="xl:pl-14 2xl:block hidden">
         <hr className="h-6 w-[0.5px] bg-gray-300" />
 
       </div>
-      <div className="flex space-x-4">
-        <p className="text-sm">Become a <span className="underline font-bold ">Zola vendor</span></p>
-        <p className="text-sm">Become a <span className="underline font-bold ">Zola vendor</span></p>
+      <div className="hidden space-x-4 2xl:flex ">
+        <p className="text-sm text-nowrap">Become a <span className="underline font-bold ">Zola vendor</span></p>
+        <p className="text-sm text-nowrap">Become a <span className="underline font-bold ">Zola vendor</span></p>
 
       </div>
     </section>

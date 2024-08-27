@@ -5,18 +5,13 @@ export default function Home() {
     <>
       <Header />
       <SubHeader />
-      <main>
-     <hr className="w-full " />
-     <HeroSection/>
-     <hr className="w-full " />
-     <CardSection/>
-
-
-
-
-
-      </main>
-     
+       <main>
+        <hr className="w-full " />
+        <HeroSection />
+        
+       <hr className="w-full " />
+        <CardSection />   
+      </main> 
     </>
   );
 }

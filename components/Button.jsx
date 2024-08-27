@@ -6,7 +6,7 @@ import { CgArrowRight } from "react-icons/cg";
 
 export default function Button() {
   return (
-    <button className="flex items-center space-x-2 md:px-5 px-1 py-[10px]  bg-[#1A56DB]">
+    <button className="sm:flex hidden items-center space-x-2 md:px-5 px-1 py-[10px]   bg-[#1A56DB]">
       <div className="flex items-center space-x-[2px]  ">
       <MdLock className="md:block hidden" />
 

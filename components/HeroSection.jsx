@@ -11,28 +11,28 @@ export default function HeroSection() {
       case 'Apps':
         return activeTab === 'Apps'
           ? {
-              buttonStyle: 'px-6 py-2 rounded-full border bg-[#EBF6FF] border-[#aac2db]',
+              buttonStyle: 'sm:px-6 px-3 py-2 rounded-full border bg-[#EBF6FF] border-[#aac2db]',
               textStyle: 'text-blue-800',
             }
           : { buttonStyle: '', textStyle: '' };
       case 'Agencies':
         return activeTab === 'Agencies'
           ? {
-              buttonStyle: 'px-6 py-2 rounded-full border bg-[#EBF6FF] border-[#aac2db]',
+              buttonStyle: 'sm:px-6 px-3 py-2 rounded-full border bg-[#EBF6FF] border-[#aac2db]',
               textStyle: 'text-blue-800',
             }
           : { buttonStyle: '', textStyle: '' };
       case 'Themes':
         return activeTab === 'Themes'
           ? {
-              buttonStyle: 'px-6 py-2 rounded-full border bg-[#EBF6FF] border-[#aac2db]',
+              buttonStyle: 'sm:px-6 px-3 py-2 rounded-full border bg-[#EBF6FF] border-[#aac2db]',
               textStyle: 'text-blue-800',
             }
           : { buttonStyle: '', textStyle: '' };
       case 'Services':
         return activeTab === 'Services'
           ? {
-              buttonStyle: 'px-6 py-2 rounded-full border bg-[#EBF6FF] border-[#aac2db]',
+              buttonStyle: 'sm:px-6 px-3 py-2 rounded-full border bg-[#EBF6FF] border-[#aac2db]',
               textStyle: 'text-blue-800',
             }
           : { buttonStyle: '', textStyle: '' };
@@ -42,11 +42,11 @@ export default function HeroSection() {
   };
 
   return (
-    <section className='px-2'>
-      <div className='w-full flex justify-center my-14 flex-col items-center space-y-10'>
-        <h1 className='text-[#1b1b1b] text-4xl font-extrabold'>Find the best Shopify apps</h1>
+    <section className='px-2 '>
+      <div className='w-full  flex  my-8 md:my-14 flex-col items-center space-y-5 md:space-y-10 '>
+        <h1 className='text-[#1b1b1b] text-3xl sm:text-4xl font-extrabold text-center'>Find the best Shopify apps</h1>
         <div className='flex flex-col space-y-6'>
-        <div className='flex space-x-10 justify-center '>
+        <div className='flex sm:space-x-10 space-x-5 justify-center '>
           <Tabs
             title='Apps'
             buttonStyle={getTabStyle('Apps').buttonStyle}
@@ -72,10 +72,18 @@ export default function HeroSection() {
             onClick={() => setActiveTab('Services')}
           />
         </div>
+        <div>
 
         <SearchBar/>
         </div>
+        </div>
+        <div className=''>
         <PopularTags/>
+
+        </div>
+      
+       
+    
       </div>
     </section>
   );
