@@ -5,8 +5,8 @@ import data from "@/constants/data";
 
 export default function CardSection() {
   return (
-    <section className="my-14 md:px-20 px:2">
-      <div className="pl-2">
+    <section className="my-14 md:px-20 px:2  ">
+      <div className="flex flex-col items-start 2xl:items-center ">
         <h1 className="text-3xl text-[#1b1b1b] font-bold">
           Worldwide ecommerce success stories
         </h1>
@@ -19,8 +19,8 @@ export default function CardSection() {
           <RiArrowRightDoubleFill />
         </div>
       </div>
-      <div className="xl:flex w-full mt-8 ">
-        <div className="w-auto flex flex-col space-y-8">
+      <div className="xl:flex justify-center w-full md:space-x-14 xl:mt-12 mt-8 ">
+        <div className="w-auto flex flex-col space-y-8 ">
           <div>
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-5 lg:gap-y-24 md:gap-y-14 gap-y-5">
               {data.map((item) => (
@@ -29,8 +29,9 @@ export default function CardSection() {
             </div>
           </div>
         </div>
-        <div className="  mx-auto flex items-start justify-center xl:mt-0 mt-8  ">
-          <div className="flex flex-col border md:w-[300px] sm:w-full w-[300px] items-center pb-6 ">
+    
+        <div className=" mx-auto  flex items-start justify-center xl:mt-0 mt-8  ">
+          <div className="flex flex-col border w-[300px]    items-center pb-6 ">
             <div className="bg-black w-full py-3">
               <h1 className="  text-white text-center font-bold ">
                 Join the community 👋
@@ -55,6 +56,8 @@ export default function CardSection() {
           </div>
         </div>
       </div>
+     
+    
     </section>
   );
 }
