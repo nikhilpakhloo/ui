@@ -14,7 +14,7 @@ import { GiFlatPlatform } from "react-icons/gi";
 
 const Header = () => {
   return (
-    <header>
+    <header className="sticky top-0">
       <nav className="bg-[#E90000] px-2 lg:px-6 py-2.5">
         <div className="flex justify-between items-center mx-auto text-white ">
           <div className="flex items-center space-x-2 sm:space-x-3 ">

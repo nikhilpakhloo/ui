@@ -6,7 +6,7 @@ import data from "@/constants/data";
 export default function CardSection() {
   return (
     <section className="my-14 md:px-20 px:2  ">
-      <div className="flex flex-col items-start 2xl:items-center ">
+      <div className="flex flex-col items-start 2xl:items-center px-2 ">
         <h1 className="text-3xl text-[#1b1b1b] font-bold">
           Worldwide ecommerce success stories
         </h1>
@@ -30,8 +30,8 @@ export default function CardSection() {
           </div>
         </div>
     
-        <div className=" mx-auto  flex items-start justify-center xl:mt-0 mt-8  ">
-          <div className="flex flex-col border w-[300px]    items-center pb-6 ">
+        <div className=" mx-auto  flex items-start justify-center xl:mt-0 mt-8 px-2  ">
+          <div className="flex flex-col border xl:w-[300px]    items-center pb-6 ">
             <div className="bg-black w-full py-3">
               <h1 className="  text-white text-center font-bold ">
                 Join the community 👋
